@@ -1,12 +1,15 @@
 import React from 'react';
-import logo from './logo.svg';
+import { Layout } from 'antd';
 import './App.css';
+import 'antd/dist/antd.css';
+import Header from './Components/Shared/Header';
+const { Footer, Sider, Content } = Layout;
 
-function App() {
+const App: React.FC = () => {
   return (
-    <div className="App">
-      
-    </div>
+    <Layout className='App'>
+      <Header />
+    </Layout>
   );
 }
 
