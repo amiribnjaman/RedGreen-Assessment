@@ -22,10 +22,10 @@ const Header: React.FC = () => {
         //     </PageHeader>
         // </div>
 
-        <div className='w-full bg-white h-[70px] shadow-md flex items-center'>
+        <div className='w-full bg-white h-[70px] z-20 shadow-md flex items-center'>
             <div className='w-11/12 mx-auto flex justify-between'>
                 <div className='w-full flex items-center justify-between'>
-                    <div className='w-5/12 flex justify-between'>
+                    <div className='w-[47%] flex justify-between'>
                         <div>
                             <img src={Logo} alt="" />
                         </div>
@@ -33,7 +33,7 @@ const Header: React.FC = () => {
                             <Input placeholder="Search" bordered={false} suffix={
                                 <Tooltip title="Extra information">
                                     <SearchOutlined style={{ color: 'rgba(0,0,0,.45)' }} />
-                                </Tooltip>} style={{ width: 280, background: '#E1E1E1', color: '#8F8F8F' }} />
+                                </Tooltip>} style={{ width: 320, background: '#E1E1E1', color: '#8F8F8F' }} />
                         </div>
                     </div>
                     <div className=' w-2/12'>
