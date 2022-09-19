@@ -1,0 +1,62 @@
+[
+    {
+        "category": "TV",
+        "model": "OnePlus TV 44 Inch",
+        "percent": 10,
+        "value": "5K"
+    },
+    {
+        "category": "Mb",
+        "model": "UMI Smartphone",
+        "percent": 17,
+        "value": "4.5K"
+    },
+    {
+        "category": "JP",
+        "model": "Chuwi Laptop",
+        "percent": 20,
+        "value": "2K"
+    },
+    {
+        "category": "JP",
+        "model": "Oneplus TV Y1G",
+        "percent": 1,
+        "value": "1.5K"
+    },
+    {
+        "category": "JP",
+        "model": "Earphone",
+        "percent": -1,
+        "value": "1.4K"
+    },
+    {
+        "category": "JP",
+        "model": "Charger",
+        "percent": -5,
+        "value": "1.5K"
+    },
+    {
+        "category": "JP",
+        "model": "Cable",
+        "percent": -50,
+        "value": "1.5K"
+    },
+    {
+        "category": "JP",
+        "model": "Electric Car",
+        "percent": -5,
+        "value": "900"
+    },
+    {
+        "category": "JP",
+        "model": "ERP Software",
+        "percent": 5,
+        "value": "870"
+    },
+    {
+        "category": "JP",
+        "model": "Attendence System",
+        "percent": 6,
+        "value": "720"
+    }
+]

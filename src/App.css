@@ -3,6 +3,8 @@
 .App{
   font-family: 'Poppins', sans-serif;
 }
+
+/* Sidebar */
 .ant-layout-sider{
   min-width: 250px !important;
 }
@@ -13,7 +15,16 @@
   border: 0 !important;
 }
 .ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected svg{
-  color: #002ED0;
+  color: #002ED0 !important;
+}
+.ant-menu-item-selected a {
+  color: #002ED0 !important;
+}
+.ant-menu-vertical .ant-menu-item:not(:last-child), .ant-menu-vertical-left .ant-menu-item:not(:last-child), .ant-menu-vertical-right .ant-menu-item:not(:last-child), .ant-menu-inline .ant-menu-item:not(:last-child) {
+  margin-bottom: 0 !important;
+}
+.ant-menu-item a:hover {
+  color: #002ED0 !important;
 }
 .ant-menu-vertical .ant-menu-item::after, .ant-menu-vertical-left .ant-menu-item::after, .ant-menu-vertical-right .ant-menu-item::after, .ant-menu-inline .ant-menu-item::after{
   border-right: 0 !important;
@@ -23,6 +34,30 @@
   color: #002ED0 !important;
   border-radius: 5px;
 }
-.ant-menu-light .ant-menu-item:hover, .ant-menu-light .ant-menu-item-active, .ant-menu-light .ant-menu:not(.ant-menu-inline) .ant-menu-submenu-open, .ant-menu-light .ant-menu-submenu-active, .ant-menu-light .ant-menu-submenu-title:hover .ant-menu-item svg {
-  color: #002ED0 !important;
+
+/* Total Chart page */
+.totalChart canvas {
+  height: 200px !important;
+}
+.recharts-cartesian-axis-tick-line{
+  display: none;
+}
+
+.recharts-layer line{
+  stroke: #ddd;
+}
+.recharts-layer .recharts-line-dots{
+  display: none;
+}
+.recharts-layer .recharts-line-dots circle{
+  stroke-width: 5 !important;
+}
+.recharts-line path{
+  stroke-width: 2.5 !important;
+}
+.recharts-layer path:hover circle{
+  display: block;
+}
+.recharts-cartesian-axis-tick-line text{
+  color: #ddd;
 }

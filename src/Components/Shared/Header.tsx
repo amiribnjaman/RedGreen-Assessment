@@ -29,14 +29,14 @@ const Header: React.FC = () => {
                         <div>
                             <img src={Logo} alt="" />
                         </div>
-                        <div>
+                        <div className='hidden md:block'>
                             <Input placeholder="Search" bordered={false} suffix={
                                 <Tooltip title="Extra information">
-                                    <SearchOutlined style={{ color: 'rgba(0,0,0,.45)' }} />
-                                </Tooltip>} style={{ width: 320, background: '#E1E1E1', color: '#8F8F8F' }} />
+                                    <SearchOutlined style={{ color: '#8F8F8F' }} />
+                                </Tooltip>} style={{ width: 320, background: '#F1F3F8', color: '#8F8F8F' }} />
                         </div>
                     </div>
-                    <div className=' w-2/12'>
+                    <div className='w-1/2 md:w-2/12'>
                         <div className='flex items-center justify-around'>
                             <div>
                                 <img src={Bell} alt="" />
