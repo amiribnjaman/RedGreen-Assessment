@@ -11,7 +11,10 @@ const SideBar: React.FC = () => {
         style={{ width: 250, background: '#F1F2F7', padding: '40px 30px', height: 'calc(100vh - 70px)' }} >
 
           {/* Main Menus */}
-        <h6 className='pl-[24px] mb-4'>MENU</h6>
+          <Menu.Item className='menu-header' style={{cursor: 'default', color: '#000', background: '#F1F2F7'}}>
+            <span className="flex items-center">
+              Menu</span>
+          </Menu.Item>
         <Menu.Item>
           <Link to='/'>
             <span className="flex items-center">
@@ -47,7 +50,10 @@ const SideBar: React.FC = () => {
 
 
         {/* Settings Menu */}
-        <h6 className='mt-12 pl-[24px] mb-4'>Settings</h6>
+        <Menu.Item className='menu-header' style={{cursor: 'default', color: '#000', background: '#F1F2F7', marginTop: '30px'}}>
+            <span className="">
+              Settings</span>
+          </Menu.Item>
         <Menu.Item>
           <span className="flex items-center">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-bar-chart-line-fill mr-3 text-[#9DACBE]" viewBox="0 0 16 16">

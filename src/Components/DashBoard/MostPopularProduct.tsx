@@ -15,11 +15,11 @@ const MostPopularProduct: React.FC = () => {
     const percent = []
 
     return (
-        <div className='w-1/2 shadow'>
+        <div className='mb-4 md:mb-0 md:w-1/2 shadow'>
             <Card>
                 {/* Most popular header */}
                 <div className='mb-4 flex justify-between'>
-                    <h4 className='text-[15px] font-semibold'>Most Popular Product</h4>
+                    <h4 className='text-[17px] font-semibold'>Most Popular Product</h4>
                     <span>:</span>
                 </div>
 

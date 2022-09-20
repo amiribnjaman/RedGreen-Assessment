@@ -1,8 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
 
+*{
+  overflow-x: hidden;
+}
 .App{
   font-family: 'Poppins', sans-serif;
 }
+
 
 /* Sidebar */
 .ant-layout-sider{
@@ -29,10 +33,14 @@
 .ant-menu-vertical .ant-menu-item::after, .ant-menu-vertical-left .ant-menu-item::after, .ant-menu-vertical-right .ant-menu-item::after, .ant-menu-inline .ant-menu-item::after{
   border-right: 0 !important;
 }
-.ant-menu-light .ant-menu-item:hover, .ant-menu-light .ant-menu-item-active, .ant-menu-light .ant-menu:not(.ant-menu-inline) .ant-menu-submenu-open, .ant-menu-light .ant-menu-submenu-active, .ant-menu-light .ant-menu-submenu-title:hover {
+.ant-menu-light .ant-menu-item:hover, .ant-menu-light .ant-menu-item-active, .ant-menu-light .ant-menu:not(.ant-menu-inline) .ant-menu-submenu-open, .ant-menu-light .ant-menu-submenu-active:not(:first-child), .ant-menu-light .ant-menu-item-only-child:not(:first-child) .ant-menu-submenu-title:not(:first-child):hover {
   background-color: rgba(0, 46, 208,.1) !important;
   color: #002ED0 !important;
   border-radius: 5px;
+}
+.ant-menu .menu-header:hover, .ant-menu-item .menu-header:hover{
+  background: #F1F2F7 !important;
+  color: #000 !important;
 }
 
 /* Total Chart page */
@@ -59,5 +67,23 @@
   display: block;
 }
 .recharts-cartesian-axis-tick-line text{
-  color: #ddd;
+  color: #eee !important;
+}
+.recharts-cartesian-grid-horizontal line:last-child, .recharts-cartesian-grid-vertical, .recharts-yAxis.yAxis line{
+  display: none;
+}
+.recharts-cartesian-grid-horizontal line, .recharts-xAxis.xAxis line{
+  stroke: #eee;
+  stroke-width: .8px;
+}
+.dailychart canvas{
+  height: 180px !important;
+  display: flex;
+  flex-direction: column-reverse;
+}
+.dailychart div{
+  position: relative;
+  width: 340px;
+  top: 0;
+  left: -25px;
 }

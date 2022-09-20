@@ -14,7 +14,9 @@ const App: React.FC = () => {
   return (
     <div className='App'>
       <Layout>
+      <div className='shadow-md'>
       <Header />
+      </div>
 
       </Layout>
       <Layout>

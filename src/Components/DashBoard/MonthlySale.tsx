@@ -8,7 +8,7 @@ const MonthlySale: React.FC = () => {
       <Card>
         <div className=''>
           {/* Monthly sale heading */}
-          <h3 className='text-[15px] font-semibold'>Sales</h3>
+          <h3 className='text-[17px] font-semibold'>Sales</h3>
         </div>
         <div className='flex justify-between'>
           <div>

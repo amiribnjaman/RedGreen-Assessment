@@ -5,7 +5,6 @@ import Logo from '../../Assets/Logo.png'
 import Bell from '../../Assets/bell.png'
 import Person from '../../Assets/person.png'
 
-const { Search } = Input;
 
 const Header: React.FC = () => {
     return (
@@ -22,7 +21,7 @@ const Header: React.FC = () => {
         //     </PageHeader>
         // </div>
 
-        <div className='w-full bg-white h-[70px] z-20 shadow-md flex items-center'>
+        <div className='header shadow-md w-full bg-white h-[70px] z-50 flex items-center'>
             <div className='w-11/12 mx-auto flex justify-between'>
                 <div className='w-full flex items-center justify-between'>
                     <div className='w-[47%] flex justify-between'>
