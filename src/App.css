@@ -8,7 +8,7 @@
 }
 
 
-/* Sidebar */
+/*------------------------Sidebar ----------------------*/
 .ant-layout-sider{
   min-width: 250px !important;
 }
@@ -43,14 +43,13 @@
   color: #000 !important;
 }
 
-/* Total Chart page */
+/*-----------------Charts Custom Style---------------------- */
 .totalChart canvas {
   height: 200px !important;
 }
 .recharts-cartesian-axis-tick-line{
   display: none;
 }
-
 .recharts-layer line{
   stroke: #ddd;
 }
@@ -69,12 +68,16 @@
 .recharts-cartesian-axis-tick-line text{
   color: #eee !important;
 }
-.recharts-cartesian-grid-horizontal line:last-child, .recharts-cartesian-grid-vertical, .recharts-yAxis.yAxis line{
+ .recharts-cartesian-grid-vertical, .recharts-yAxis.yAxis line{
   display: none;
 }
 .recharts-cartesian-grid-horizontal line, .recharts-xAxis.xAxis line{
   stroke: #eee;
   stroke-width: .8px;
+}
+.total-chart .recharts-wrapper{
+  margin-right: 5px !important;
+  margin-left: auto;
 }
 .dailychart canvas{
   height: 180px !important;
@@ -85,5 +88,16 @@
   position: relative;
   width: 340px;
   top: 0;
-  left: -25px;
+  left: -33px;
+}
+.g2-tooltip{
+  width: 35% !important;
+  left: 133px !important;
+  height: 72px !important;
+}
+
+.header{
+  box-shadow: 5px 10px 5px 50px black !important;
+  border-bottom: .1px solid rgba(0,0,0,0.1);
+  z-index: 50;
 }

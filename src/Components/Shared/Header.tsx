@@ -8,20 +8,9 @@ import Person from '../../Assets/person.png'
 
 const Header: React.FC = () => {
     return (
-        // <div className="site-page-header-ghost-wrapper shadow-md">
-        //     <PageHeader
-        //         className="site-page-header"
-        //         extra={[
-        //             <img src={Bell} alt="" />,
-        //             <img src={Person} alt="" />,
-        //             <h6>Riandra</h6>
-        //         ]}
-        //         avatar={{ src: Logo }}
-        //     >
-        //     </PageHeader>
-        // </div>
 
-        <div className='header shadow-md w-full bg-white h-[70px] z-50 flex items-center'>
+        <div className='header'>
+            <div className=' shadow-md w-full bg-white h-[70px] z-50 flex items-center'>
             <div className='w-11/12 mx-auto flex justify-between'>
                 <div className='w-full flex items-center justify-between'>
                     <div className='w-[47%] flex justify-between'>
@@ -49,6 +38,7 @@ const Header: React.FC = () => {
                     </div>
                 </div>
             </div>
+        </div>
     );
 };
 

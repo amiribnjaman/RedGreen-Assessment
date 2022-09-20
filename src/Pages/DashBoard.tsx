@@ -5,7 +5,7 @@ import SaleComponent from '../Components/DashBoard/SaleComponent';
 
 const DashBoard: React.FC = () => {
     return (
-        <div className='w-[93%] mx-auto py-10'>
+        <div className='w-[93%] mx-auto z-[-100] py-10'>
             <h4 className='mb-4 text-lg'>Redgreen Sales</h4>
             <Notification />
             <SaleComponent />

@@ -1,14 +1,18 @@
 import React from 'react';
 import { Card } from 'antd';
 import SingleProduct from './SingleProduct';
+import Icon from '../../Assets/Icon.png'
 
 const MonthlySale: React.FC = () => {
   return (
     <div className='shadow'>
       <Card>
-        <div className=''>
+        <div className='flex justify-between'>
           {/* Monthly sale heading */}
-          <h3 className='text-[17px] font-semibold'>Sales</h3>
+          <h3 className='text-[19px] font-semibold'>Sales</h3>
+          <span>
+          <img height={2} width={3} src={Icon} alt='' />
+          </span>
         </div>
         <div className='flex justify-between'>
           <div>

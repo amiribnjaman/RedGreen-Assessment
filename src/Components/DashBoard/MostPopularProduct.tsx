@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Card } from 'antd';
 import { preProcessFile } from 'typescript';
+import Icon from '../../Assets/Icon.png'
 
 const MostPopularProduct: React.FC = () => {
     const [products, setProducts] = useState<any[]>([])
@@ -19,8 +20,8 @@ const MostPopularProduct: React.FC = () => {
             <Card>
                 {/* Most popular header */}
                 <div className='mb-4 flex justify-between'>
-                    <h4 className='text-[17px] font-semibold'>Most Popular Product</h4>
-                    <span>:</span>
+                    <h4 className='text-[19px] font-semibold'>Most Popular Product</h4>
+                    <span> <img height={2} width={3} src={Icon} alt='' /></span>
                 </div>
 
                 {/* Products main section */}
@@ -31,7 +32,7 @@ const MostPopularProduct: React.FC = () => {
                                 <h6 className='border m-1 mr-2 py-1 px-2 rounded'>{pro.category}</h6>
                                 <div>
                                     <h4 className='m-0 font-semibold'>{pro.model}</h4>
-                                    { pro.percent > 0 ? <h6 className='m-0 text-black mt-0 text-[11px]'>{pro.percent }% Increase</h6> : <h6 className='text-red-500 m-0 text-[11px]'>{ pro.percent}% Increase</h6> }
+                                    { pro.percent > 0 ? <h6 className='m-0 text-black mt-0 text-[11px] font-normal'>{pro.percent }% Increase</h6> : <h6 className='text-red-500 m-0 text-[11px] font-normal'>{ pro.percent}% Increase</h6> }
                                 </div>
                             </div>
                             <h5 className='text-red-500 text-[13px]'>{pro.value}</h5>

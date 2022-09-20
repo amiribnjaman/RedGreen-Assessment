@@ -35,9 +35,9 @@ const DailyCart: React.FC = () => {
     },
     theme: {
         colors10: [
-          '#002ED0',
-          '#626681',
-          '#FFC100'
+          '#2D5BFF',
+          '#6284FD',
+          '#96ADFF'
         ]
     },
     style: {

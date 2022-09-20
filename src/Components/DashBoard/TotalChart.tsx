@@ -44,7 +44,7 @@ const TotalChart = () => {
         for (let i = 0; i < num.length; i++) {
             sum += num[i]
         }
-        return sum + '00'
+        return sum + ',00,00'
     }
 
 
@@ -83,10 +83,10 @@ const getIntroOfPage = (label:any) => {
     const CustomTooltip = ({ active, payload, label }: Props) => {
         if (active && payload && payload.length) {
             return (
-                <div className="custom-tooltip border p-2 shadow text-center relative top-[-10px]">
+                <div className="custom-tooltip bg-white border py-2 px-3 shadow text-center relative top-[-10px]">
                     <p className="label m-0">{`${label} : ${payload[0].value}`}</p>
                     <p className="intro">{getIntroOfPage(label)}</p>
-                    <p className="desc font-semibold mx-0 my-1">Total Sale: {firstThreeSum(firstThreeSaleValue)}</p>
+                    <p className="desc font-semibold mx-0 my-1">{firstThreeSum(firstThreeSaleValue)}</p>
                 </div>
             );
         }
@@ -99,18 +99,17 @@ const getIntroOfPage = (label:any) => {
         <div className='flex justify-between'>
             <div className='w-1/12'>
                 {firstThree.map(d => <div>
-
-{/* Push value to variable */}
+                    {/* Push value to variable */}
                     <div className='hidden'>{firstThreeSaleValue.push(d.value)}</div>
 
-                    <small>{ d.device}</small>
-                    <h4 className='font-[400] text-[16px]'>{d.value + '00'}</h4>
+                    <small className='text-slate-700'>{ d.device}</small>
+                    <h4 className='text-[16px] font-semibold'>{d.value + ',00'}</h4>
 
                 </div>)}
             </div>
-            <div className='w-11/12'>
-                <LineChart style={{overflowX: 'auto'}} width={460} height={200} data={data}
-                    margin={{ top: 5, right: 30, left: 20, bottom: 5 }}>
+            <div className='total-chart w-11/12'>
+                <LineChart style={{overflowX: 'auto'}} width={465} height={200} data={data}
+                    margin={{ top: 5, right: 5, left: 20, bottom: 5 }}>
                     <XAxis dataKey="number" />
                     <YAxis />
                     <CartesianGrid strokeDasharray="0 0" />

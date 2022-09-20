@@ -1,6 +1,10 @@
 import { Menu } from 'antd';
 import React from 'react';
 import { Link } from "react-router-dom";
+import MapIcon from '../../Assets/map.png';
+import HelpIcon from '../../Assets/Help.png';
+import AccountIcon from '../../Assets/Accounts.png';
+import SettingsIcon from '../../Assets/Settings.png';
 
 
 const SideBar: React.FC = () => {
@@ -27,9 +31,7 @@ const SideBar: React.FC = () => {
         <Menu.Item>
           <Link to='/maps'>
             <span className="flex items-center">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-map-fill mr-3 text-[#9DACBE]" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.598-.49L10.5.99 5.598.01a.5.5 0 0 0-.196 0l-5 1A.5.5 0 0 0 0 1.5v14a.5.5 0 0 0 .598.49l4.902-.98 4.902.98a.502.502 0 0 0 .196 0l5-1A.5.5 0 0 0 16 14.5V.5zM5 14.09V1.11l.5-.1.5.1v12.98l-.402-.08a.498.498 0 0 0-.196 0L5 14.09zm5 .8V1.91l.402.08a.5.5 0 0 0 .196 0L11 1.91v12.98l-.5.1-.5-.1z" />
-              </svg>
+              <img className='mr-3' src={MapIcon} alt='' />
               Maps</span>
           </Link>
         </Menu.Item>
@@ -56,23 +58,17 @@ const SideBar: React.FC = () => {
           </Menu.Item>
         <Menu.Item>
           <span className="flex items-center">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-bar-chart-line-fill mr-3 text-[#9DACBE]" viewBox="0 0 16 16">
-              <path d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1V2z" />
-            </svg>
+          <img className='mr-3' src={SettingsIcon} alt='' />
             Settings</span>
         </Menu.Item>
         <Menu.Item>
           <span className="flex items-center">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-bar-chart-line-fill mr-3 text-[#9DACBE]" viewBox="0 0 16 16">
-              <path d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1V2z" />
-            </svg>
+            <img className='mr-3' src={AccountIcon} alt='' />
             Accounts</span>
         </Menu.Item>
         <Menu.Item>
           <span className="flex items-center">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-bar-chart-line-fill mr-3 text-[#9DACBE]" viewBox="0 0 16 16">
-              <path d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1V2z" />
-            </svg>
+          <img className='mr-3' src={HelpIcon} alt='' />
             Helps</span>
         </Menu.Item>
 

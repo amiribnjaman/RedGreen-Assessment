@@ -14,11 +14,9 @@ const App: React.FC = () => {
   return (
     <div className='App'>
       <Layout>
-      <div className='shadow-md'>
-      <Header />
-      </div>
-
+        <Header />
       </Layout>
+      
       <Layout>
         <div className='hidden md:block'>
         <Sider style={{ background: '#F1F2F7' }}>
