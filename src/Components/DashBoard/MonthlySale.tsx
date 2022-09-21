@@ -1,9 +1,8 @@
 import React from 'react';
-import { Card } from 'antd';
 import SingleProduct from './SingleProduct';
 import Icon from '../../Assets/Icon.png'
 
-const MonthlySale: React.FC = () => {
+const MonthlySale = () => {
   return (
     <div className='shadow dark:bg-[#15202B] border dark:border-0 p-7 rounded'>
       

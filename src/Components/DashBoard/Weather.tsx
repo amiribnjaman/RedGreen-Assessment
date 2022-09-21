@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-import { Card } from 'antd';
 import SunLight from '../../Assets/Light.png'
 import Icon from '../../Assets/Icon.png'
 

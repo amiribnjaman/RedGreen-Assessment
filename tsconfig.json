@@ -21,6 +21,11 @@
     "jsx": "react-jsx"
   },
   "include": [
-    "src"
-  ]
+    "src",
+    "scripts/**/*"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "clean": "tsc --build --clean"
+  }
 }

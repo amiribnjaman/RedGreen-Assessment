@@ -10,7 +10,7 @@ import { Routes, Route } from "react-router-dom";
 
 const { Sider, Content } = Layout;
 
-const App: React.FC = () => {
+const App = () => {
   const [isDark, setIsDark] = useState(false)
 
   return (

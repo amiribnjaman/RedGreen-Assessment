@@ -1,13 +1,12 @@
-import { Card } from 'antd';
+
 import React from 'react';
 import TotalChart from './TotalChart';
 import DailyChart from './DailyChart'
 import Icon from '../../Assets/Icon.png'
-import type { DatePickerProps } from 'antd';
-import { DatePicker, Space } from 'antd';
+import { DatePicker } from 'antd';
 import moment from 'moment';
 
-const SaleComponent: React.FC = () => {
+const SaleComponent = () => {
 
   const Format = 'DD/MM/YY';
 

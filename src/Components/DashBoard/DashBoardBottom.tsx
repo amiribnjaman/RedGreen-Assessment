@@ -3,7 +3,7 @@ import MostPopularProduct from './MostPopularProduct';
 import MonthlySale from './MonthlySale';
 import Weather from './Weather';
 
-const DashBoardBottom: React.FC = () => {
+const DashBoardBottom = () => {
     return (
         <div className='mt-4 gap-4 md:flex justify-between'>
             <MostPopularProduct />

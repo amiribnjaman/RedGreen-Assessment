@@ -1,8 +1,7 @@
-import React, { useState, useEffect } from 'react';
-import ReactDOM from 'react-dom';
+import React from 'react';
 import { Pie } from '@ant-design/plots';
 
-const DailyCart: React.FC = () => {
+const DailyCart = () => {
   const data = [
     {
       type: '50% TV',

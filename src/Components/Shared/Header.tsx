@@ -8,8 +8,8 @@ import Person from '../../Assets/person.png'
 
 // Header Props type
 type HeaderProps = {
-    isDark: boolean,
-    setIsDark: any
+    isDark: boolean;
+    setIsDark: any;
 }
 
 const Header = ({ isDark, setIsDark }: HeaderProps) => {

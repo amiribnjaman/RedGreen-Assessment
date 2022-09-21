@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { Card } from 'antd';
-import { preProcessFile } from 'typescript';
 import Icon from '../../Assets/Icon.png'
 
-const MostPopularProduct: React.FC = () => {
+const MostPopularProduct  = () => {
     const [products, setProducts] = useState<any[]>([])
 
     useEffect(() => {
