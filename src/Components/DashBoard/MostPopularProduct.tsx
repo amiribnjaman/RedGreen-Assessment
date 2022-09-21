@@ -14,7 +14,7 @@ const MostPopularProduct: React.FC = () => {
 
 
     return (
-        <div className='mb-4 dark:bg-[#15202B] p-7 rounded md:mb-0 md:w-1/2 shadow'>
+        <div className='mb-4 dark:bg-[#15202B] p-7 dark:border-0 border rounded md:mb-0 md:w-1/2 shadow'>
                 {/* Most popular header */}
                 <div className='mb-4 flex justify-between'>
                     <h4 className='text-[19px] font-semibold dark:text-white'>Most Popular Product</h4>
