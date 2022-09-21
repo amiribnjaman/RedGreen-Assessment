@@ -52,7 +52,7 @@ const Weather = () => {
     return (
         <div className='md:w-full border dark:border-0 dark:text-white dark:bg-[#15202B] mt-4 p-7 rounded shadow'>
             <div className='flex justify-between mb-4'>
-            <h3 className='dark:text-white text-[19px]'>Weather</h3>
+            <h3 className='dark:text-white text-[19px] font-semibold'>Weather</h3>
             <div>
             <img height={2} width={3} src={Icon} alt='' />
             </div>
@@ -68,10 +68,10 @@ const Weather = () => {
                 </div>
 
                 <div>
-                    <h5 className='mb-4'>Wed, 21 September 2022</h5>
-                    <p className='text-[13px]'>10: 00 AM <span className='ml-3'>Light Rain, 27C</span></p>
-                    <p className='text-[13px]'>2: 00 PM <span className='ml-3'>Light Rain, 30C</span></p>
-                    <p className='text-[13px]'>6: 00 PM <span className='ml-3'>Light Rain, 26C</span></p>
+                    <h5 className='mb-4 dark:text-white'>Wed, 21 September 2022</h5>
+                    <p className='text-[13px] dark:text-white'>10: 00 AM <span className='ml-3'>Light Rain, 27C</span></p>
+                    <p className='text-[13px] dark:text-white'>2: 00 PM <span className='ml-3'>Light Rain, 30C</span></p>
+                    <p className='text-[13px] dark:text-white'>6: 00 PM <span className='ml-3'>Light Rain, 26C</span></p>
                 </div>
             </div>
         </div>

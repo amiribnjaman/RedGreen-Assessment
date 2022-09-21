@@ -23,8 +23,9 @@
   color: #002ED0;
   border-radius: 5px;
   border: 0 !important;
+  font-weight: 500;
 }
-.ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected svg{
+.ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected svg, .ant-menu-item-selected img{
   color: #002ED0 !important;
 }
 .ant-menu-item-selected a {
