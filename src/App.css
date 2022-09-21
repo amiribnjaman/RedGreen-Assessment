@@ -6,9 +6,15 @@
 .App{
   font-family: 'Poppins', sans-serif;
 }
+.header{
+  /* box-shadow: 5px 10px 5px 50px black !important; */
+  border-bottom: .1px solid rgba(0,0,0,0.1);
+  z-index: 50;
+}
 
 
 /*------------------------Sidebar ----------------------*/
+
 .ant-layout-sider{
   min-width: 250px !important;
 }
@@ -96,8 +102,3 @@
   height: 72px !important;
 }
 
-.header{
-  box-shadow: 5px 10px 5px 50px black !important;
-  border-bottom: .1px solid rgba(0,0,0,0.1);
-  z-index: 50;
-}

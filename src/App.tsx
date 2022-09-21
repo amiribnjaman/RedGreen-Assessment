@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { Layout } from 'antd';
 import './App.css';
 import 'antd/dist/antd.css';
@@ -11,20 +11,22 @@ import { Routes, Route } from "react-router-dom";
 const { Sider, Content } = Layout;
 
 const App: React.FC = () => {
+  const [isDark, setIsDark] = useState(false)
+
   return (
-    <div className='App'>
+    <div className={`App ${isDark ? 'dark' : ''}`}>
       <Layout>
-        <Header />
+        <Header isDark={isDark} setIsDark={setIsDark}/>
       </Layout>
       
       <Layout>
-        <div className='hidden md:block'>
-        <Sider style={{ background: '#F1F2F7' }}>
-          <SideBar />
+        <div className=' hidden md:block'>
+        <Sider>
+          <SideBar isDark={isDark} />
         </Sider>
         </div>
 
-        <Content style={{background: '#fff', }}>
+        <Content>
           <Routes>
             <Route path='/' element={<DashBoard />} />
             <Route path='/maps' element={<Maps />} />

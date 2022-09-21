@@ -5,19 +5,19 @@ import Icon from '../../Assets/Icon.png'
 
 const MonthlySale: React.FC = () => {
   return (
-    <div className='shadow'>
-      <Card>
+    <div className='shadow dark:bg-[#15202B] p-7 rounded'>
+      
         <div className='flex justify-between'>
           {/* Monthly sale heading */}
-          <h3 className='text-[19px] font-semibold'>Sales</h3>
+          <h3 className='text-[19px] font-semibold dark:text-white'>Sales</h3>
           <span>
           <img height={2} width={3} src={Icon} alt='' />
           </span>
         </div>
         <div className='flex justify-between'>
           <div>
-            <h4 className='m-0 text-[13px]'>Monthly Sale</h4>
-            <h5 className='font-semibold text-[18px] m-0'>981</h5>
+            <h4 className='m-0 text-[13px] dark:text-white'>Monthly Sale</h4>
+            <h5 className='font-semibold text-[18px] m-0 dark:text-white'>981</h5>
           </div>
           <h4>Date</h4>
         </div>
@@ -44,7 +44,6 @@ const MonthlySale: React.FC = () => {
         />
         <hr />
       <p className='text-blue-600 text-[11px] font-semibold mb-0 mt-3'>Show more</p>
-      </Card>
     </div>
   );
 };

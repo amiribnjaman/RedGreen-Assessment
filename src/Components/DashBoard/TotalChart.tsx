@@ -102,8 +102,8 @@ const getIntroOfPage = (label:any) => {
                     {/* Push value to variable */}
                     <div className='hidden'>{firstThreeSaleValue.push(d.value)}</div>
 
-                    <small className='text-slate-700'>{ d.device}</small>
-                    <h4 className='text-[16px] font-semibold'>{d.value + ',00'}</h4>
+                    <small className='text-slate-700 dark:text-white'>{ d.device}</small>
+                    <h4 className='text-[16px] font-semibold dark:text-white'>{d.value + ',00'}</h4>
 
                 </div>)}
             </div>
