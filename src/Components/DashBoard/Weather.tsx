@@ -3,7 +3,7 @@ import SunLight from '../../Assets/Light.png'
 import Icon from '../../Assets/Icon.png'
 
 const Weather = () => {
-    const [finalWeather, setWeather] = useState<any>({})
+    const [getWeather, setGetWeather] = useState<any>({})
     const key = 'vm4930c2lYACDcMJ0ovtPCbtN30jvQjF'
     const cityKey = '28143'
 
@@ -12,8 +12,8 @@ const Weather = () => {
         const wQuery = `${cityKey}?apikey=${key}`;
         fetch(weatherApi + wQuery)
         .then(res => res.json())
-        .then(data =>setWeather(data[0]))
-    }, [finalWeather])
+        .then(data =>setGetWeather(data[0]))
+    }, [getWeather])
 
 
     // Time
@@ -36,7 +36,7 @@ const Weather = () => {
                     <div>
                     <img width={90} height={90} src={SunLight} alt='' />
                     </div>
-                    <h4 className="dark:text-white">{finalWeather?.WeatherText}, {finalWeather?.Temperature?.Metric?.Value} <sup>&#176;</sup>C</h4>
+                    <h4 className="dark:text-white">{getWeather?.WeatherText}, {getWeather?.Temperature?.Metric?.Value} <sup>&#176;</sup>C</h4>
                 </div>
 
                 <div>
