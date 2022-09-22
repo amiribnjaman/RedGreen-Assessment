@@ -1,47 +1,20 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import SunLight from '../../Assets/Light.png'
 import Icon from '../../Assets/Icon.png'
 
 const Weather = () => {
-    const [city, setCity] = useState<any>({})
     const [finalWeather, setWeather] = useState<any>({})
-
     const key = 'vm4930c2lYACDcMJ0ovtPCbtN30jvQjF'
+    const cityKey = '28143'
 
-    // Get city Id
-    const getCity = (city: string) => {
-        const baseUrl = 'https://dataservice.accuweather.com/locations/v1/cities/search';
-        const query = `?apikey=${key}&q=${city}`;
-
-        fetch(baseUrl + query)
-        .then((res) => res.json())
-        .then(data => setCity(data[0]))
-
-        return city
-
-    }
-
-    // Get weather 
-    const getWeather = (cityId: Promise<any>) => {
-        const baseUrl = 'https://dataservice.accuweather.com/currentconditions/v1/';
-        const query = `${cityId}?apikey=${key}`;
-
-        fetch(baseUrl + query)
+    useEffect(()=> {
+        const weatherApi = 'https://dataservice.accuweather.com/currentconditions/v1/';
+        const wQuery = `${cityKey}?apikey=${key}`;
+        fetch(weatherApi + wQuery)
         .then(res => res.json())
         .then(data =>setWeather(data[0]))
+    }, [finalWeather])
 
-        return finalWeather
-    }
-
-    // Final weather
-    const weather = () => {
-        const cityDetails = getCity('dhaka');
-        const weather = getWeather(city.Key);
-
-        return {cityDetails, weather}
-    }
-
-    const result = weather()?.weather;
 
     // Time
     const date = new Date()
@@ -63,7 +36,7 @@ const Weather = () => {
                     <div>
                     <img width={90} height={90} src={SunLight} alt='' />
                     </div>
-                    <h4 className="dark:text-white">{result?.WeatherText}, {result?.Temperature?.Metric?.Value} <sup>&#176;</sup>C</h4>
+                    <h4 className="dark:text-white">{finalWeather?.WeatherText}, {finalWeather?.Temperature?.Metric?.Value} <sup>&#176;</sup>C</h4>
                 </div>
 
                 <div>

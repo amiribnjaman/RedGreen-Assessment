@@ -10,6 +10,7 @@
   /* box-shadow: 5px 10px 5px 50px black !important; */
   border-bottom: .1px solid rgba(0,0,0,0.1);
   z-index: 50;
+  
 }
 
 
@@ -36,6 +37,7 @@
 }
 .ant-menu-item a:hover {
   color: #002ED0 !important;
+  font-weight: 500;
 }
 .ant-menu-vertical .ant-menu-item::after, .ant-menu-vertical-left .ant-menu-item::after, .ant-menu-vertical-right .ant-menu-item::after, .ant-menu-inline .ant-menu-item::after{
   border-right: 0 !important;
