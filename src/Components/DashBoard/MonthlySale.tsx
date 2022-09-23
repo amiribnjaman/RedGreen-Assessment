@@ -4,7 +4,7 @@ import Icon from '../../Assets/Icon.png'
 
 const MonthlySale = () => {
   return (
-    <div className='shadow dark:bg-[#15202B] border dark:border-0 p-7 rounded'>
+    <div className='shadow dark:bg-[#15202B] border dark:border-0 p-4 md:p-7 rounded'>
       
         <div className='flex justify-between'>
           {/* Monthly sale heading */}

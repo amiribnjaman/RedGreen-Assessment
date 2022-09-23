@@ -13,7 +13,7 @@ const SaleComponent = () => {
   return (
     <div className='mt-4 mb-4 md:mb-0 gap-4 md:flex justify-between'>
       {/* Total sales card */}
-      <div className='mb-4 dark:bg-[#15202B] p-7 border dark:border-0 rounded md:mb-0 md:w-8/12 shadow'>
+      <div className='mb-4 dark:bg-[#15202B] p-4 md:p-7 md:pb-3 border dark:border-0 rounded md:mb-0 md:w-8/12 shadow'>
         <div className='flex justify-between mb-5'>
           {/* Total sales heading */}
           <h3 className='font-semibold text-[19px] dark:text-white'>Total Sales</h3>
@@ -33,7 +33,7 @@ const SaleComponent = () => {
 
 
       {/* Daily sale card */}
-      <div className='md:w-4/12 dark:bg-[#15202B] p-7 border dark:border-0 rounded shadow'>
+      <div className='md:w-4/12 dark:bg-[#15202B] p-4 md:p-4 border dark:border-0 rounded shadow'>
         <div className='flex justify-between'>
           {/* Daily sale heading */}
           <div>
